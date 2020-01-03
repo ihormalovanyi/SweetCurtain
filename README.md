@@ -15,7 +15,7 @@ When building your app’s user interface, the curtain controller is typically t
 When displayed onscreen, the curtain controller works with its Delegation objects to manage the content changes and to messaging of its curtain changes.
 Also, the curtain controller provides the curtain object to manage the curtain's properties.
 
-# Features
+## Features
 - Coefficient oriented metrics.
 - Friendly content changes mechanism.
 - Works with storyboard and code.
