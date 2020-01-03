@@ -24,3 +24,9 @@ Also, the curtain controller provides the curtain object to manage the curtain's
 - Compatible with scroll view.
 - Compatible with horizontal scroll or swipe.
 - Designed by the principle of iOS UI components.
+
+## Usage
+
+### Setup using storyboard
+
+### Setup using code
