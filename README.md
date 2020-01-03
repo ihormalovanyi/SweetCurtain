@@ -10,4 +10,7 @@ A Curtain Controller is a container view controller that manages two child view 
 
 When building your app’s user interface, the curtain controller is typically the root view controller of your app’s window, but it may be embedded in another view controller. The curtain controller has no significant appearance of its own. Most of its appearance is defined by the child view controllers you install. You can configure the child view controllers using Interface Builder or programmatically by assigning the view controllers to the viewControllers property. The child view controllers can be custom view controllers or other container view controller, such as navigation controllers.
 
-> **Note**: You can push a curtain controller onto a navigation stack. Also, its children can be contained in the navigation controller or tab bar controller.  But remember that curtain always covers the content. For example, if the content contained in the navigation controller, the curtain will cover the navigation bar too.
+> **Note**: You can push a curtain controller onto a navigation stack. Also, its children can be contained in the navigation controller or tab bar controller.  But remember that curtain always covers the content. For example, if the content embed in the navigation controller, the curtain will cover the navigation bar too.
+
+When displayed onscreen, the curtain controller works with its Delegation objects to manage the content changes and to messaging of its curtain changes.
+Also, the curtain controller provides the curtain object to manage the curtain's properties.
