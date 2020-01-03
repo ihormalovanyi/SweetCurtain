@@ -28,5 +28,50 @@ Also, the curtain controller provides the curtain object to manage the curtain's
 ## Usage
 
 ### Setup using storyboard
+1. Create a View Controller and set the Class to be CurtainController in the Identity Inspector.
+
+![](https://ihor.pro/wp-content/uploads/2020/01/Screenshot-2020-01-03-at-22.37.43-1.png)
+
+2. Create two other view controllers you want. The one will be a Content and another one will be a Curtain.
+
+![](https://ihor.pro/wp-content/uploads/2020/01/Screenshot-2020-01-03-at-22.50.43.png)
+
+3. Connect your CurtainController to your new view controllers with the Curtain Connection Segue.
+
+![](https://ihor.pro/wp-content/uploads/2020/01/Screenshot-2020-01-03-at-22.58.58.png)
+
+4. Choose the Curtain Connection Segue of your Content View Controller and type **ContentID** as it's identifier in the Identity Inspector.
+
+![](https://ihor.pro/wp-content/uploads/2020/01/Screenshot-2020-01-03-at-23.03.00.png)
+
+5. Choose the Curtain Connection Segue of your Curtain View Controller and type **CurtainID** as it's identifier in the Identity Inspector.
+
+![](https://ihor.pro/wp-content/uploads/2020/01/Screenshot-2020-01-03-at-23.03.20.png)
+
+You all set!
+
+> **Note**: Double-check your segues and segue IDs. This is important for the right setup of the flow.
 
 ### Setup using code
+
+1. Create a two view controllers you want for using them as Content and Curtain.
+
+```swift
+//Also, you can instantiate your controllers from storyboard if you want it.
+let contentViewController = IceCreamDetailViewController()
+let curtainViewController = IceCreamListViewController()
+```
+
+2. Create a CurtainController using two controllers that you created in the previous step.
+
+```swift
+let curtainController = CurtainController(content: contentViewController, curtain: curtainViewController)
+```
+
+3. Show the curtainController where and when you want.
+
+```swift
+show(curtainController, sender: nil)
+```
+
+You all set!
