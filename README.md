@@ -76,6 +76,14 @@ show(curtainController, sender: nil)
 
 You all set!
 
+## CurtainController
+
+Curtain controller is a container view controller that implements a content-curtain interface.
+You can create the CurtainController using Storyboard or from the code.
+All of your view controllers have access to the `curtainController` property. It's computed property that provides access to the nearest ancestor in the view controller hierarchy that is a curtain controller.
+
+The Curtain Controller object has a couple of properties.
+
 ## Curtain properties
 
 The Curtain is the object of Curtain Controller that provides a couple of properties for behavior and view customization. But Curtain is not the view. The Сurtain is the abstract object represented by protocol with properties that Curtain Controller uses for its purposes. Simply put, the Curtain designed to reduce confusion and delimit settings duty in the controller.
