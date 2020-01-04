@@ -87,7 +87,7 @@ The Curtain Controller object has a couple of properties and functions.
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | `curtainDelegate` | CurtainDelegate? | The delegate you want to receive curtain controller messages that concern its curtain. |
-| `curtain` | Curtain! | The object that provides all curtain's behaviour properties. |
+| `curtain` | [Curtain!](#curtain) | The object that provides all curtain's behaviour properties. |
 
 The initializer for creating a new curtain controller:
 ```swift
