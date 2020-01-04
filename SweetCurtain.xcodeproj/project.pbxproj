@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AF9BE5D23BE01DB00655B1D /* SweetCurtain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9BE5323BE01DB00655B1D /* SweetCurtain.framework */; };
+		0AF9BE6223BE01DB00655B1D /* SweetCurtainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BE6123BE01DB00655B1D /* SweetCurtainTests.swift */; };
+		0AF9BE6423BE01DB00655B1D /* SweetCurtain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF9BE5623BE01DB00655B1D /* SweetCurtain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AF9BEB923BE09D200655B1D /* CurtainPushDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEA423BE09D200655B1D /* CurtainPushDirection.swift */; };
+		0AF9BEBA23BE09D200655B1D /* CurtainSwipeResistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEA523BE09D200655B1D /* CurtainSwipeResistance.swift */; };
+		0AF9BEBB23BE09D200655B1D /* CurtainHeightState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEA623BE09D200655B1D /* CurtainHeightState.swift */; };
+		0AF9BEBC23BE09D200655B1D /* CGFloatArray+findClosest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEA823BE09D200655B1D /* CGFloatArray+findClosest.swift */; };
+		0AF9BEBD23BE09D200655B1D /* UIView+findScrollSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEA923BE09D200655B1D /* UIView+findScrollSubview.swift */; };
+		0AF9BEBE23BE09D200655B1D /* UIViewController+CurtainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEAA23BE09D200655B1D /* UIViewController+CurtainController.swift */; };
+		0AF9BEBF23BE09D200655B1D /* CurtainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEAC23BE09D200655B1D /* CurtainController.swift */; };
+		0AF9BEC023BE09D200655B1D /* CC+AddControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEAE23BE09D200655B1D /* CC+AddControllers.swift */; };
+		0AF9BEC123BE09D200655B1D /* ContentChangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB023BE09D200655B1D /* ContentChangeService.swift */; };
+		0AF9BEC223BE09D200655B1D /* CurtainHeightProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB123BE09D200655B1D /* CurtainHeightProvider.swift */; };
+		0AF9BEC323BE09D200655B1D /* CurtainControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB323BE09D200655B1D /* CurtainControllerDelegate.swift */; };
+		0AF9BEC423BE09D200655B1D /* Curtain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB423BE09D200655B1D /* Curtain.swift */; };
+		0AF9BEC523BE09D200655B1D /* CurtainUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB623BE09D200655B1D /* CurtainUpdateModel.swift */; };
+		0AF9BEC623BE09D200655B1D /* CurtainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB823BE09D200655B1D /* CurtainControllerSegue.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AF9BE5E23BE01DB00655B1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AF9BE4A23BE01DB00655B1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AF9BE5223BE01DB00655B1D;
+			remoteInfo = SweetCurtain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AF9BE5323BE01DB00655B1D /* SweetCurtain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetCurtain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF9BE5623BE01DB00655B1D /* SweetCurtain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SweetCurtain.h; sourceTree = "<group>"; };
+		0AF9BE5723BE01DB00655B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF9BE5C23BE01DB00655B1D /* SweetCurtainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetCurtainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF9BE6123BE01DB00655B1D /* SweetCurtainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetCurtainTests.swift; sourceTree = "<group>"; };
+		0AF9BE6323BE01DB00655B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF9BEA423BE09D200655B1D /* CurtainPushDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainPushDirection.swift; sourceTree = "<group>"; };
+		0AF9BEA523BE09D200655B1D /* CurtainSwipeResistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainSwipeResistance.swift; sourceTree = "<group>"; };
+		0AF9BEA623BE09D200655B1D /* CurtainHeightState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainHeightState.swift; sourceTree = "<group>"; };
+		0AF9BEA823BE09D200655B1D /* CGFloatArray+findClosest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloatArray+findClosest.swift"; sourceTree = "<group>"; };
+		0AF9BEA923BE09D200655B1D /* UIView+findScrollSubview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+findScrollSubview.swift"; sourceTree = "<group>"; };
+		0AF9BEAA23BE09D200655B1D /* UIViewController+CurtainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+CurtainController.swift"; sourceTree = "<group>"; };
+		0AF9BEAC23BE09D200655B1D /* CurtainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainController.swift; sourceTree = "<group>"; };
+		0AF9BEAE23BE09D200655B1D /* CC+AddControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CC+AddControllers.swift"; sourceTree = "<group>"; };
+		0AF9BEB023BE09D200655B1D /* ContentChangeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentChangeService.swift; sourceTree = "<group>"; };
+		0AF9BEB123BE09D200655B1D /* CurtainHeightProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainHeightProvider.swift; sourceTree = "<group>"; };
+		0AF9BEB323BE09D200655B1D /* CurtainControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainControllerDelegate.swift; sourceTree = "<group>"; };
+		0AF9BEB423BE09D200655B1D /* Curtain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curtain.swift; sourceTree = "<group>"; };
+		0AF9BEB623BE09D200655B1D /* CurtainUpdateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainUpdateModel.swift; sourceTree = "<group>"; };
+		0AF9BEB823BE09D200655B1D /* CurtainControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainControllerSegue.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AF9BE5023BE01DB00655B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9BE5923BE01DB00655B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF9BE5D23BE01DB00655B1D /* SweetCurtain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AF9BE4923BE01DB00655B1D = {
+			isa = PBXGroup;
+			children = (
+				0AF9BE5523BE01DB00655B1D /* SweetCurtain */,
+				0AF9BE6023BE01DB00655B1D /* SweetCurtainTests */,
+				0AF9BE5423BE01DB00655B1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AF9BE5423BE01DB00655B1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9BE5323BE01DB00655B1D /* SweetCurtain.framework */,
+				0AF9BE5C23BE01DB00655B1D /* SweetCurtainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AF9BE5523BE01DB00655B1D /* SweetCurtain */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9BEAB23BE09D200655B1D /* Controllers */,
+				0AF9BEA323BE09D200655B1D /* Enums */,
+				0AF9BEA723BE09D200655B1D /* Extensions */,
+				0AF9BEB223BE09D200655B1D /* Protocols */,
+				0AF9BEB723BE09D200655B1D /* Segues */,
+				0AF9BEAF23BE09D200655B1D /* Services */,
+				0AF9BEB523BE09D200655B1D /* Value objects */,
+				0AF9BE5623BE01DB00655B1D /* SweetCurtain.h */,
+				0AF9BE5723BE01DB00655B1D /* Info.plist */,
+			);
+			path = SweetCurtain;
+			sourceTree = "<group>";
+		};
+		0AF9BE6023BE01DB00655B1D /* SweetCurtainTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9BE6123BE01DB00655B1D /* SweetCurtainTests.swift */,
+				0AF9BE6323BE01DB00655B1D /* Info.plist */,
+			);
+			path = SweetCurtainTests;
+			sourceTree = "<group>";
+		};
+		0AF9BEA323BE09D200655B1D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9BEA423BE09D200655B1D /* CurtainPushDirection.swift */,
+				0AF9BEA523BE09D200655B1D /* CurtainSwipeResistance.swift */,
+				0AF9BEA623BE09D200655B1D /* CurtainHeightState.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		0AF9BEA723BE09D200655B1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9BEA823BE09D200655B1D /* CGFloatArray+findClosest.swift */,
+				0AF9BEA923BE09D200655B1D /* UIView+findScrollSubview.swift */,
+				0AF9BEAA23BE09D200655B1D /* UIViewController+CurtainController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0AF9BEAB23BE09D200655B1D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9BEAC23BE09D200655B1D /* CurtainController.swift */,
+				0AF9BEAD23BE09D200655B1D /* Curtain Controller Extensions */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0AF9BEAD23BE09D200655B1D /* Curtain Controller Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9BEAE23BE09D200655B1D /* CC+AddControllers.swift */,
+			);
+			path = "Curtain Controller Extensions";
+			sourceTree = "<group>";
+		};
+		0AF9BEAF23BE09D200655B1D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9BEB023BE09D200655B1D /* ContentChangeService.swift */,
+				0AF9BEB123BE09D200655B1D /* CurtainHeightProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0AF9BEB223BE09D200655B1D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9BEB323BE09D200655B1D /* CurtainControllerDelegate.swift */,
+				0AF9BEB423BE09D200655B1D /* Curtain.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0AF9BEB523BE09D200655B1D /* Value objects */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9BEB623BE09D200655B1D /* CurtainUpdateModel.swift */,
+			);
+			path = "Value objects";
+			sourceTree = "<group>";
+		};
+		0AF9BEB723BE09D200655B1D /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9BEB823BE09D200655B1D /* CurtainControllerSegue.swift */,
+			);
+			path = Segues;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AF9BE4E23BE01DB00655B1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF9BE6423BE01DB00655B1D /* SweetCurtain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AF9BE5223BE01DB00655B1D /* SweetCurtain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF9BE6723BE01DB00655B1D /* Build configuration list for PBXNativeTarget "SweetCurtain" */;
+			buildPhases = (
+				0AF9BE4E23BE01DB00655B1D /* Headers */,
+				0AF9BE4F23BE01DB00655B1D /* Sources */,
+				0AF9BE5023BE01DB00655B1D /* Frameworks */,
+				0AF9BE5123BE01DB00655B1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SweetCurtain;
+			productName = SweetCurtain;
+			productReference = 0AF9BE5323BE01DB00655B1D /* SweetCurtain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0AF9BE5B23BE01DB00655B1D /* SweetCurtainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF9BE6A23BE01DB00655B1D /* Build configuration list for PBXNativeTarget "SweetCurtainTests" */;
+			buildPhases = (
+				0AF9BE5823BE01DB00655B1D /* Sources */,
+				0AF9BE5923BE01DB00655B1D /* Frameworks */,
+				0AF9BE5A23BE01DB00655B1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AF9BE5F23BE01DB00655B1D /* PBXTargetDependency */,
+			);
+			name = SweetCurtainTests;
+			productName = SweetCurtainTests;
+			productReference = 0AF9BE5C23BE01DB00655B1D /* SweetCurtainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AF9BE4A23BE01DB00655B1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Ihor Malovanyi";
+				TargetAttributes = {
+					0AF9BE5223BE01DB00655B1D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					0AF9BE5B23BE01DB00655B1D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 0AF9BE4D23BE01DB00655B1D /* Build configuration list for PBXProject "SweetCurtain" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AF9BE4923BE01DB00655B1D;
+			productRefGroup = 0AF9BE5423BE01DB00655B1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AF9BE5223BE01DB00655B1D /* SweetCurtain */,
+				0AF9BE5B23BE01DB00655B1D /* SweetCurtainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AF9BE5123BE01DB00655B1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9BE5A23BE01DB00655B1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AF9BE4F23BE01DB00655B1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF9BEC223BE09D200655B1D /* CurtainHeightProvider.swift in Sources */,
+				0AF9BEC523BE09D200655B1D /* CurtainUpdateModel.swift in Sources */,
+				0AF9BEC623BE09D200655B1D /* CurtainControllerSegue.swift in Sources */,
+				0AF9BEC123BE09D200655B1D /* ContentChangeService.swift in Sources */,
+				0AF9BEC423BE09D200655B1D /* Curtain.swift in Sources */,
+				0AF9BEBA23BE09D200655B1D /* CurtainSwipeResistance.swift in Sources */,
+				0AF9BEBD23BE09D200655B1D /* UIView+findScrollSubview.swift in Sources */,
+				0AF9BEBC23BE09D200655B1D /* CGFloatArray+findClosest.swift in Sources */,
+				0AF9BEC023BE09D200655B1D /* CC+AddControllers.swift in Sources */,
+				0AF9BEBF23BE09D200655B1D /* CurtainController.swift in Sources */,
+				0AF9BEBB23BE09D200655B1D /* CurtainHeightState.swift in Sources */,
+				0AF9BEC323BE09D200655B1D /* CurtainControllerDelegate.swift in Sources */,
+				0AF9BEB923BE09D200655B1D /* CurtainPushDirection.swift in Sources */,
+				0AF9BEBE23BE09D200655B1D /* UIViewController+CurtainController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9BE5823BE01DB00655B1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF9BE6223BE01DB00655B1D /* SweetCurtainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AF9BE5F23BE01DB00655B1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AF9BE5223BE01DB00655B1D /* SweetCurtain */;
+			targetProxy = 0AF9BE5E23BE01DB00655B1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AF9BE6523BE01DB00655B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0AF9BE6623BE01DB00655B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0AF9BE6823BE01DB00655B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2PKVZCQ5NM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SweetCurtain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ihor.ios.framework.SweetCurtain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AF9BE6923BE01DB00655B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2PKVZCQ5NM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SweetCurtain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ihor.ios.framework.SweetCurtain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0AF9BE6B23BE01DB00655B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2PKVZCQ5NM;
+				INFOPLIST_FILE = SweetCurtainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ihor.ios.framework.SweetCurtainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AF9BE6C23BE01DB00655B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2PKVZCQ5NM;
+				INFOPLIST_FILE = SweetCurtainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ihor.ios.framework.SweetCurtainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AF9BE4D23BE01DB00655B1D /* Build configuration list for PBXProject "SweetCurtain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF9BE6523BE01DB00655B1D /* Debug */,
+				0AF9BE6623BE01DB00655B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AF9BE6723BE01DB00655B1D /* Build configuration list for PBXNativeTarget "SweetCurtain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF9BE6823BE01DB00655B1D /* Debug */,
+				0AF9BE6923BE01DB00655B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AF9BE6A23BE01DB00655B1D /* Build configuration list for PBXNativeTarget "SweetCurtainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF9BE6B23BE01DB00655B1D /* Debug */,
+				0AF9BE6C23BE01DB00655B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AF9BE4A23BE01DB00655B1D /* Project object */;
+}
