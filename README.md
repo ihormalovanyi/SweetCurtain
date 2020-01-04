@@ -116,3 +116,26 @@ The Curtain is the object of Curtain Controller that provides a couple of proper
 | `handleIndicatorColor` | [UIColor](https://developer.apple.com/documentation/uikit/uicolor) | The color of the curtain's handle indicator. |
 | `heightCoefficient` | [CGFloat](https://developer.apple.com/documentation/coregraphics/cgfloat) | The current readonly value that describes the ratio of the curtain actual height to the height of the content. |
 | `actualHeight` | [CGFloat](https://developer.apple.com/documentation/coregraphics/cgfloat) | The current readonly value that describes the curtain actual height. |
+
+### CurtainHeightState
+
+**Curtain height state** is an enumerator of height states of the curtain.
+
+| Case | Description |
+| :--- | :--- |
+| min | Minimum defined height state. |
+| mid | Intermediate defined height state. |
+| max | Maximum defined height state. |
+| hide | Hidden state. |
+
+### CurtainSwipeResistance
+
+**Curtain Swipe Resistance** is an enumerator of predefined (or custom) velocity swipe resistances available for the curtain.
+
+| Case | Description |
+| :--- | :--- |
+| any | No resistance. Velocity value is 0. |
+| low | Low resistance. Velocity value is 300. |
+| normal | Normal resistance. Velocity value is 600. |
+| high | High resistance. Velocity value is 900. |
+| custom(velocity: CGFloat) | Custom resistance. Velocity value is what you set. |
