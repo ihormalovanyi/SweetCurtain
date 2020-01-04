@@ -117,6 +117,29 @@ The Curtain is the object of Curtain Controller that provides a couple of proper
 | `heightCoefficient` | [CGFloat](https://developer.apple.com/documentation/coregraphics/cgfloat) | The current readonly value that describes the ratio of the curtain actual height to the height of the content. |
 | `actualHeight` | [CGFloat](https://developer.apple.com/documentation/coregraphics/cgfloat) | The current readonly value that describes the curtain actual height. |
 
+### CurtainDelegate
+**Curtain Delegate** is the protocol that allows receiving messages from [Curtain Controller](#curtaincontroller). **Curtain Delegate** provides a couple of functions.
+
+Tells the delegate when the curtain did change ir's height state:
+```swift
+func curtain(_ curtain: Curtain, didChange heightState: CurtainHeightState)
+```
+
+Tells the delegate when the curtain is about to start dragging:
+```swift
+func curtainWillBeginDragging(_ curtain: Curtain)
+```
+
+Tells the delegate when dragging ended in the curtain:
+```swift
+func curtainDidEndDragging(_ curtain: Curtain)
+```
+
+Tells the delegate when the user draggs the curtain:
+```swift
+func curtainDidDrag(_ curtain: Curtain)
+```
+
 ### CurtainHeightState
 
 **Curtain height state** is an enumerator of height states of the curtain.
