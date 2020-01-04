@@ -7,13 +7,13 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "https://ihor.pro"
 
-  spec.license      = "MIT"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
   spec.author             = { "Ihor Malovanyi" => "mail@ihor.pro" }
 
   spec.platform     = :ios, "9.0"
 
-  spec.source       = { :git => "https://github.com/multimediasuite/SweetCurtain.git", :tag => "0.0.1" }
+  spec.source       = { :git => "https://github.com/multimediasuite/SweetCurtain.git", :tag => "#{spec.version}" }
 
   spec.source_files  = "SweetCurtain/**/*.{h,m,swift}"
 
