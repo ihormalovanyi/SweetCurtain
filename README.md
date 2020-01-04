@@ -12,7 +12,7 @@ When building your app’s user interface, the curtain controller is typically t
 
 > **Note**: You can push a curtain controller onto a navigation stack. Also, its children can be contained in the navigation controller or tab bar controller.  But remember that curtain always covers the content. For example, if the content embed in the navigation controller, the curtain will cover the navigation bar too.
 
-When displayed onscreen, the curtain controller works with its Delegation objects to manage the content changes and to messaging of its curtain changes.
+When displayed onscreen, the curtain controller uses its Delegation object to messaging of its curtain changes.
 Also, the curtain controller provides the curtain object to manage the curtain's properties.
 
 ## Features
@@ -25,7 +25,7 @@ Also, the curtain controller provides the curtain object to manage the curtain's
 - Compatible with horizontal scroll or swipe.
 - Designed by the principle of iOS UI components.
 
-## Usage
+## Usage and explanation
 
 ### Setup using storyboard
 1. Create a View Controller and set the Class to be CurtainController in the Identity Inspector.
@@ -76,15 +76,30 @@ show(curtainController, sender: nil)
 
 You all set!
 
-## CurtainController
+### CurtainController
 
 Curtain controller is a container view controller that implements a content-curtain interface.
 You can create the CurtainController using Storyboard or from the code.
 All of your view controllers have access to the `curtainController` property. It's computed property that provides access to the nearest ancestor in the view controller hierarchy that is a curtain controller.
 
-The Curtain Controller object has a couple of properties.
+The Curtain Controller object has a couple of properties and functions.
 
-## Curtain properties
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `curtainDelegate` | CurtainDelegate? | The delegate you want to receive curtain controller messages that concern its curtain. |
+| `curtain` | Curtain! | The object that provides all curtain's behaviour properties. |
+
+The initializer for creating a new curtain controller:
+```swift
+init(content: UIViewController, curtain: UIViewController)
+```
+
+Function for moving curtain to the position you want:
+```swift
+func moveCurtain(to position: CurtainHeightState, animated: Bool)
+```
+
+### Curtain
 
 The Curtain is the object of Curtain Controller that provides a couple of properties for behavior and view customization. But Curtain is not the view. The Сurtain is the abstract object represented by protocol with properties that Curtain Controller uses for its purposes. Simply put, the Curtain designed to reduce confusion and delimit settings duty in the controller.
 
