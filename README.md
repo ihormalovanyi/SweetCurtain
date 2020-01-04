@@ -76,6 +76,20 @@ show(curtainController, sender: nil)
 
 You all set!
 
-## Setup the Curtain properties
+## Curtain properties
 
 The Curtain is the object of Curtain Controller that provides a couple of properties for behavior and view customization. But Curtain is not the view. The Сurtain is the abstract object represented by protocol with properties that Curtain Controller uses for its purposes. Simply put, the Curtain designed to reduce confusion and delimit settings duty in the controller.
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `minHeightCoefficient` | [CGFloat](https://developer.apple.com/documentation/coregraphics/cgfloat) | The minimum value that describes the ratio of the curtain minimum permissible height to the height of the content. |
+| `midHeightCoefficient` | [CGFloat?](https://developer.apple.com/documentation/coregraphics/cgfloat) | The intermediate value that describes the ratio of the curtain intermediate permissible height to the height of the content. |
+| `maxHeightCoefficient` | [CGFloat](https://developer.apple.com/documentation/coregraphics/cgfloat) | The maximum value that describes the ratio of the curtain maximum permissible height to the height of the content. |
+| `swipeResistance` | CurtainSwipeResistance | The swipe resistance of the curtain. |
+| `movingDuration` | [TimeInterval](https://developer.apple.com/documentation/foundation/timeinterval) | The time in seconds for reaching curtain to the nearest point. |
+| `topBounce` | [Bool](https://developer.apple.com/documentation/swift/bool) | The boolean value that controls whether the curtain bounces past the top. |
+| `bottomBounce` | [Bool](https://developer.apple.com/documentation/swift/bool) | The boolean value that controls whether the curtain bounces past the bottom. |
+| `showsHandleIndicator` | [Bool](https://developer.apple.com/documentation/swift/bool) | The boolean that controls whether the curtain shows top handle indicator. |
+| `handleIndicatorColor` | [UIColor](https://developer.apple.com/documentation/uikit/uicolor) | The color of the curtain's handle indicator. |
+| `heightCoefficient` | [CGFloat](https://developer.apple.com/documentation/coregraphics/cgfloat) | The current readonly value that describes the ratio of the curtain actual height to the height of the content. |
+| `actualHeight` | [CGFloat](https://developer.apple.com/documentation/coregraphics/cgfloat) | The current readonly value that describes the curtain actual height. |
