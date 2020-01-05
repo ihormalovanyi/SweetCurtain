@@ -218,6 +218,8 @@ func curtainDidDrag(_ curtain: Curtain)
 ## TODO
 
 - Test gestures in the controller.
+- Write unit tests.
+- Update for iPad and big-phones horizontal screen.
 - Write log messages for the wrong usage.
 - Update animation parameters for grow smoothness.
 - Add videos that describe how to use SweetCurtain well.
