@@ -1,0 +1,11 @@
+framework module SweetCurtain {
+  umbrella header "SweetCurtain.h"
+
+  export *
+  module * { export * }
+}
+
+module SweetCurtain.Swift {
+    header "SweetCurtain-Swift.h"
+    requires objc
+}
