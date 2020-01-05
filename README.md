@@ -4,6 +4,14 @@ A framework that provides [Curtain Controller](#curtaincontroller). [Curtain Con
 [![Platform](https://img.shields.io/badge/platform-ios-blue.svg?style=flat%20)](https://developer.apple.com/iphone/index.action)
 [![Swift 5.1](https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat)](https://developer.apple.com/swift/) 
 
+## Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage and explanation](#usageandexplanation)
+- [Credits](#credits)
+- [License](#license)
+
 ## Overview
 A **SweetCurtain** framework provides a [Curtain Controller](#curtaincontroller).
 A Curtain Controller is a container view controller that manages two child view controllers in a content-curtain interface. In this type of interface, the primary view controller (the content) is covered with the secondary view controller (the curtain).
@@ -205,3 +213,11 @@ func curtainDidDrag(_ curtain: Curtain)
 | normal | Normal resistance. Velocity value is 600. |
 | high | High resistance. Velocity value is 900. |
 | custom(velocity: CGFloat) | Custom resistance. Velocity value is what you set. |
+
+## Credits
+
+- Ihor Malovanyi([@multimediasuite](https://www.facebook.com/multimediasuite))
+
+## License
+
+SweetCurtain is released under the MIT license. See LICENSE for details.
