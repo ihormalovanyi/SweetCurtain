@@ -28,7 +28,7 @@ open class CurtainController: UIViewController {
         
         static let heightConstraintID = "heightID"
         static let rubberHeight: CGFloat = 100
-        static let rubberWeakening: CGFloat = 5
+        static let rubberWeakening: CGFloat = 2
         static let curtainHandleViewSize: CGSize = .init(width: 36, height: 5)
         static let curtainHandleYCenter: CGFloat = 7.5
         static let curtainHandleSafeAreaTop: CGFloat = 15
