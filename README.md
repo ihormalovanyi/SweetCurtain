@@ -9,6 +9,7 @@ A framework that provides [Curtain Controller](#curtaincontroller). [Curtain Con
 - [Features](#features)
 - [Installation](#installation)
 - [Usage and explanation](#usageandexplanation)
+- [TODO](#todo)
 - [Credits](#credits)
 - [License](#license)
 
@@ -214,9 +215,17 @@ func curtainDidDrag(_ curtain: Curtain)
 | high | High resistance. Velocity value is 900. |
 | custom(velocity: CGFloat) | Custom resistance. Velocity value is what you set. |
 
+## TODO
+
+- Test gestures in the controller.
+- Write log messages for the wrong usage.
+- Update animation parameters for grow smoothness.
+- Add videos that describe how to use SweetCurtain well.
+- Add Swift Dependency way to install.
+
 ## Credits
 
-- Ihor Malovanyi([@multimediasuite](https://www.facebook.com/multimediasuite))
+- Ihor Malovanyi ([@multimediasuite](https://www.facebook.com/multimediasuite))
 
 ## License
 
