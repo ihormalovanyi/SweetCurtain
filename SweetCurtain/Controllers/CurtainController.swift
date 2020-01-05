@@ -306,7 +306,7 @@ private extension CurtainController {
         
         UIView.animate(withDuration: curtain.movingDuration, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 3, options: [.allowUserInteraction], animations: {
             self.view.layoutIfNeeded()
-            self.curtainViewController.view.transform = isHide ? CGAffineTransform(translationX: 0, y: self.view.bounds.height) : .identity
+            self.curtainViewController.view.transform = isHide ? CGAffineTransform(translationX: 0, y: self.curtainViewController.view.bounds.height) : .identity
         }, completion: nil)
     }
     

@@ -18,12 +18,12 @@
 		0AF9BEBE23BE09D200655B1D /* UIViewController+CurtainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEAA23BE09D200655B1D /* UIViewController+CurtainController.swift */; };
 		0AF9BEBF23BE09D200655B1D /* CurtainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEAC23BE09D200655B1D /* CurtainController.swift */; };
 		0AF9BEC023BE09D200655B1D /* CC+AddControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEAE23BE09D200655B1D /* CC+AddControllers.swift */; };
-		0AF9BEC123BE09D200655B1D /* ContentChangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB023BE09D200655B1D /* ContentChangeService.swift */; };
 		0AF9BEC223BE09D200655B1D /* CurtainHeightProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB123BE09D200655B1D /* CurtainHeightProvider.swift */; };
-		0AF9BEC323BE09D200655B1D /* CurtainControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB323BE09D200655B1D /* CurtainControllerDelegate.swift */; };
 		0AF9BEC423BE09D200655B1D /* Curtain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB423BE09D200655B1D /* Curtain.swift */; };
 		0AF9BEC523BE09D200655B1D /* CurtainUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB623BE09D200655B1D /* CurtainUpdateModel.swift */; };
-		0AF9BEC623BE09D200655B1D /* CurtainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB823BE09D200655B1D /* CurtainControllerSegue.swift */; };
+		0AF9BF3323C1C99D00655B1D /* CurtainDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BF3223C1C99D00655B1D /* CurtainDelegate.swift */; };
+		0AF9BF3523C1C9BF00655B1D /* CC+PanGestureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BF3423C1C9BF00655B1D /* CC+PanGestureDelegate.swift */; };
+		0AF9BF3723C1C9F900655B1D /* CurtainConnectionSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BF3623C1C9F900655B1D /* CurtainConnectionSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +51,12 @@
 		0AF9BEAA23BE09D200655B1D /* UIViewController+CurtainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+CurtainController.swift"; sourceTree = "<group>"; };
 		0AF9BEAC23BE09D200655B1D /* CurtainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainController.swift; sourceTree = "<group>"; };
 		0AF9BEAE23BE09D200655B1D /* CC+AddControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CC+AddControllers.swift"; sourceTree = "<group>"; };
-		0AF9BEB023BE09D200655B1D /* ContentChangeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentChangeService.swift; sourceTree = "<group>"; };
 		0AF9BEB123BE09D200655B1D /* CurtainHeightProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainHeightProvider.swift; sourceTree = "<group>"; };
-		0AF9BEB323BE09D200655B1D /* CurtainControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainControllerDelegate.swift; sourceTree = "<group>"; };
 		0AF9BEB423BE09D200655B1D /* Curtain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curtain.swift; sourceTree = "<group>"; };
 		0AF9BEB623BE09D200655B1D /* CurtainUpdateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainUpdateModel.swift; sourceTree = "<group>"; };
-		0AF9BEB823BE09D200655B1D /* CurtainControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainControllerSegue.swift; sourceTree = "<group>"; };
+		0AF9BF3223C1C99D00655B1D /* CurtainDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainDelegate.swift; sourceTree = "<group>"; };
+		0AF9BF3423C1C9BF00655B1D /* CC+PanGestureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CC+PanGestureDelegate.swift"; sourceTree = "<group>"; };
+		0AF9BF3623C1C9F900655B1D /* CurtainConnectionSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainConnectionSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +153,7 @@
 		0AF9BEAD23BE09D200655B1D /* Curtain Controller Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0AF9BF3423C1C9BF00655B1D /* CC+PanGestureDelegate.swift */,
 				0AF9BEAE23BE09D200655B1D /* CC+AddControllers.swift */,
 			);
 			path = "Curtain Controller Extensions";
@@ -161,7 +162,6 @@
 		0AF9BEAF23BE09D200655B1D /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0AF9BEB023BE09D200655B1D /* ContentChangeService.swift */,
 				0AF9BEB123BE09D200655B1D /* CurtainHeightProvider.swift */,
 			);
 			path = Services;
@@ -170,7 +170,7 @@
 		0AF9BEB223BE09D200655B1D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				0AF9BEB323BE09D200655B1D /* CurtainControllerDelegate.swift */,
+				0AF9BF3223C1C99D00655B1D /* CurtainDelegate.swift */,
 				0AF9BEB423BE09D200655B1D /* Curtain.swift */,
 			);
 			path = Protocols;
@@ -187,7 +187,7 @@
 		0AF9BEB723BE09D200655B1D /* Segues */ = {
 			isa = PBXGroup;
 			children = (
-				0AF9BEB823BE09D200655B1D /* CurtainControllerSegue.swift */,
+				0AF9BF3623C1C9F900655B1D /* CurtainConnectionSegue.swift */,
 			);
 			path = Segues;
 			sourceTree = "<group>";
@@ -302,17 +302,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AF9BEC223BE09D200655B1D /* CurtainHeightProvider.swift in Sources */,
+				0AF9BF3723C1C9F900655B1D /* CurtainConnectionSegue.swift in Sources */,
 				0AF9BEC523BE09D200655B1D /* CurtainUpdateModel.swift in Sources */,
-				0AF9BEC623BE09D200655B1D /* CurtainControllerSegue.swift in Sources */,
-				0AF9BEC123BE09D200655B1D /* ContentChangeService.swift in Sources */,
+				0AF9BF3523C1C9BF00655B1D /* CC+PanGestureDelegate.swift in Sources */,
 				0AF9BEC423BE09D200655B1D /* Curtain.swift in Sources */,
+				0AF9BF3323C1C99D00655B1D /* CurtainDelegate.swift in Sources */,
 				0AF9BEBA23BE09D200655B1D /* CurtainSwipeResistance.swift in Sources */,
 				0AF9BEBD23BE09D200655B1D /* UIView+findScrollSubview.swift in Sources */,
 				0AF9BEBC23BE09D200655B1D /* CGFloatArray+findClosest.swift in Sources */,
 				0AF9BEC023BE09D200655B1D /* CC+AddControllers.swift in Sources */,
 				0AF9BEBF23BE09D200655B1D /* CurtainController.swift in Sources */,
 				0AF9BEBB23BE09D200655B1D /* CurtainHeightState.swift in Sources */,
-				0AF9BEC323BE09D200655B1D /* CurtainControllerDelegate.swift in Sources */,
 				0AF9BEB923BE09D200655B1D /* CurtainPushDirection.swift in Sources */,
 				0AF9BEBE23BE09D200655B1D /* UIViewController+CurtainController.swift in Sources */,
 			);
