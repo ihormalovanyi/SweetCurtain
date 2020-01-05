@@ -31,7 +31,6 @@ internal class CurtainConnectionSegue: UIStoryboardSegue {
     
     open override func perform() {
         guard let curtainController = source as? CurtainController else {
-            //TODO: Ошибка, неверный контроллер
             return
         }
         
