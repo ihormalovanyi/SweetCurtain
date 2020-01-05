@@ -4,6 +4,8 @@ A framework that provides [Curtain Controller](#curtaincontroller). Curtain Cont
 [![Platform](https://img.shields.io/badge/platform-ios-blue.svg?style=flat%20)](https://developer.apple.com/iphone/index.action)
 [![Swift 5.1](https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat)](https://developer.apple.com/swift/) 
 
+![](https://ihor.pro/wp-content/uploads/2020/01/ezgif-6-f06884bc0af6.gif)
+
 ## Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -222,6 +224,7 @@ func curtainDidDrag(_ curtain: Curtain)
 - Update for iPad and big-phones horizontal screen.
 - Write log messages for the wrong usage.
 - Update animation parameters for grow smoothness.
+- Fix horizontal scroll view work.
 - Add videos that describe how to use SweetCurtain well.
 - Add Swift Dependency way to install.
 
