@@ -25,6 +25,49 @@ Also, the Curtain Controller provides the curtain object to manage the [curtain'
 - Compatible with horizontal scroll or swipe.
 - Designed by the principle of iOS UI components.
 
+## Installation
+
+### CocoaPods
+
+[CocoaPods](#https://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+```
+$ gem install cocoapods
+```
+To integrate **SweetCurtain** into your Xcode project using CocoaPods, specify it in your `Podfile`:
+```ruby
+platform :ios, '9.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+  pod 'SweetCurtain'
+end
+```
+Then, run the following command:
+```
+$ pod install
+```
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+You can install Carthage with [Homebrew](https://brew.sh) using the following command:
+```
+$ brew update
+$ brew install carthage
+```
+
+To integrate **SweetCurtain** into your Xcode project using Carthage, specify it in your `Cartfile`:
+```
+git "https://github.com/multimediasuite/SweetCurtain"
+```
+
+Run `carthage update` to build the framework and drag the built SweetCurtain.framework into your Xcode project.
+
+### Manually
+
+If you prefer not to use either of the aforementioned dependency managers, you can integrate **SweetCurtain** into your project manually.
+
 ## Usage and explanation
 
 ### Setup using storyboard
