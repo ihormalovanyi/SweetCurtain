@@ -1,4 +1,4 @@
-# SweetCurtain
+![](https://ihor.pro/wp-content/uploads/2020/01/Artboard-1.png)
 A framework that provides [Curtain Controller](#curtaincontroller). Curtain Controller is a container view controller that implements a content-curtain interface. 
 
 [![Platform](https://img.shields.io/badge/platform-ios-blue.svg?style=flat%20)](https://developer.apple.com/iphone/index.action)
