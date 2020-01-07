@@ -24,6 +24,12 @@ class CustomCurtainViewController: UIViewController {
         view.layer.cornerRadius = 10
         view.layer.applySketchShadow(color: .black, alpha: 0.2, x: 0, y: -2, blur: 5, spread: 0)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        allowScrollViewInCurtain()
+    }
 
 }
 
