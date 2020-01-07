@@ -41,9 +41,6 @@ open class CurtainController: UIViewController {
     ///The object that provides all curtain's behaviour properties.
     open var curtain: Curtain!
     
-    //Curtain scroll
-    private var curtainScrollGestureReady = false
-    
     //MARK: Internal properties
     internal var ignoreSafeArea: Bool = true
     internal var curtainHeightProvider = CurtainHeightProvider()
@@ -102,7 +99,7 @@ open class CurtainController: UIViewController {
     //MARK: Private computed properties
     private var contentViewControlelr: UIViewController { children[0] }
     private var curtainViewController: UIViewController { children[1] }
-    private var topMostScrollView: UIScrollView? { curtainViewController.view.findScrollSubview() }
+    private var topMostScrollView: UIScrollView?
     
     //MARK: Lifecycle
     ///Initializes and returns a newly created curtain controller.
@@ -135,16 +132,10 @@ open class CurtainController: UIViewController {
         performSeguesIfNeeded()
         addCurtainPanGestureRecognizer()
         addCurtainHandleView()
-        addObservers()
     }
     
     override open func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
-        if topMostScrollView != nil && !curtainScrollGestureReady {
-            addScrollPanGestureRecognizer()
-            curtainScrollGestureReady = true
-        }
         
         guard firstLayout else { return }
         
@@ -169,6 +160,12 @@ open class CurtainController: UIViewController {
         curtainViewController.view.addSubview(curtainHandleView)
         
         curtainShowsHandleIndicator = curtain.showsHandleIndicator
+    }
+    
+    internal func allowScrollViewInCurtain(from viewController: UIViewController) {
+        topMostScrollView = viewController.view.findScrollSubview()
+        addObservers()
+        addScrollPanGestureRecognizer()
     }
     
 }
@@ -216,6 +213,7 @@ private extension CurtainController {
     }
     
     func addScrollPanGestureRecognizer() {
+        topMostScrollView?.panGestureRecognizer.removeTarget(self, action: #selector(scroll(_:)))
         topMostScrollView?.panGestureRecognizer.addTarget(self, action: #selector(scroll(_:)))
     }
     

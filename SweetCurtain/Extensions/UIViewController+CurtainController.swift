@@ -25,6 +25,11 @@ public extension UIViewController {
     ///The nearest ancestor in the view controller hierarchy that is a curtain controller.
     var curtainController: CurtainController? { findCurtainParent(in: self) }
     
+    ///Allows topmost scroll view in the hierarchy to use its scroll simultaneously with the curtain
+    func allowScrollViewInCurtain() {
+        curtainController?.allowScrollViewInCurtain(from: self)
+    }
+    
 }
 
 internal extension UIViewController {
