@@ -218,6 +218,20 @@ func curtainDidDrag(_ curtain: Curtain)
 | high | High resistance. Velocity value is 900. |
 | custom(velocity: CGFloat) | Custom resistance. Velocity value is what you set. |
 
+### UIViewController extension
+
+There is the public [UIViewController](https://developer.apple.com/documentation/uikit/uiviewcontroller) extension in the **SweetCurtain** framework. 
+
+The extension provides `curtainController` property that is the nearest ancestor in the view controller hierarchy that is a curtain controller.
+
+> **Note**: You can find the `CurtainController` from any **Curtain** or **Content** view controllers. For example, this can be useful if your curtain is a [UINavigationController](https://developer.apple.com/documentation/uikit/uinavigationcontroller) and you need to find [CurtainController](#CurtainController) for its top view controller.
+
+The extension also provides the function `func allowScrollViewInCurtain()` that allows topmost scroll view in the hierarchy to use its scroll simultaneously with the curtain.
+
+> **Note**: Your **Curtain** view controller may contain [UIScrollView](https://developer.apple.com/documentation/uikit/uiscrollview) or any of its subclasses. But by default, it does not affect the scrolling of the curtain. If you want to enable simultaneous scroll for **top most scroll view in hierarchy**, call `func allowScrollViewInCurtain()` in your view controller. 
+
+> **ATTENTION**: The function `func allowScrollViewInCurtain()` resets your previous scroll view scroll observation from the **Curtain** befor applies new one. Be careful using this function. For example, if you need to use a navigation controller as **Curtain** there is a good idea to call this function in 'func viewDidAppear(animated: Bool)' function. 
+
 ## TODO
 
 - Test gestures in the controller.
