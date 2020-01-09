@@ -230,7 +230,7 @@ The extension also provides the function `func allowScrollViewInCurtain()` that 
 
 > **Note**: Your **Curtain** view controller may contain [UIScrollView](https://developer.apple.com/documentation/uikit/uiscrollview) or any of its subclasses. But by default, it does not affect the scrolling of the curtain. If you want to enable simultaneous scroll for **top most scroll view in hierarchy**, call `func allowScrollViewInCurtain()` in your view controller. 
 
-> **ATTENTION**: The function `func allowScrollViewInCurtain()` resets your previous scroll view scroll observation from the **Curtain** befor applies new one. Be careful using this function. For example, if you need to use a navigation controller as **Curtain** there is a good idea to call this function in 'func viewDidAppear(animated: Bool)' function. 
+> **ATTENTION**: The function `func allowScrollViewInCurtain()` resets your previous scroll view scroll observation from the **Curtain** befor applies new one. Be careful using this function. For example, if you need to use a navigation controller as **Curtain** there is a good idea to call this function in 'func viewDidAppear(animated: Bool)' function of its view controllers. 
 
 ## TODO
 
