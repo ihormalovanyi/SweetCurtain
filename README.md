@@ -172,6 +172,10 @@ The **Curtain** is the object of [Curtain Controller](#curtaincontroller) that p
 | `heightCoefficient` | [CGFloat](https://developer.apple.com/documentation/coregraphics/cgfloat) | The current readonly value that describes the ratio of the curtain actual height to the height of the content. |
 | `actualHeight` | [CGFloat](https://developer.apple.com/documentation/coregraphics/cgfloat) | The current readonly value that describes the curtain actual height. |
 
+> **Note**: `heightCoefficient` is the property that describes the absolute value of the curtain position. Value 0 means that `actualHeight` might 0 too if the constraints do not interfere. Value 1 means that `actualHeight` is the same as the sum of `safeAreaInsets.bottom` and safe area height. See the image below for better understanding.
+
+![](https://ihor.pro/wp-content/uploads/2020/01/sizes.png)
+
 ### CurtainDelegate
 **Curtain Delegate** is the protocol that allows receiving messages from [Curtain Controller](#curtaincontroller). **Curtain Delegate** provides a couple of functions.
 
