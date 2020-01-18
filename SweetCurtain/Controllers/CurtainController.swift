@@ -46,7 +46,7 @@ open class CurtainController: UIViewController {
     internal var curtainHeightProvider = CurtainHeightProvider()
     internal var curtainHandleIndicatorColor: UIColor = UIColor.lightGray.withAlphaComponent(0.8) {
         didSet {
-            curtainHandleView?.backgroundColor = curtainHandleIndicatorColor
+            curtainHandleView.backgroundColor = curtainHandleIndicatorColor
         }
     }
     internal var curtainActualHeight: CGFloat {
@@ -88,7 +88,7 @@ open class CurtainController: UIViewController {
     private var scrollStartLocation: CGPoint = .zero
     private var scrollFreezeContentOffset = false
     
-    private var curtainHandleView: UIView!
+    private lazy var curtainHandleView: UIView = .init()
     private var curtainActualHeightState: CurtainHeightState = .hide {
         didSet {
             guard curtainActualHeightState != oldValue else { return }
@@ -145,6 +145,10 @@ open class CurtainController: UIViewController {
         firstLayout = false
     }
     
+    open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        curtainHandleView.center = .init(x: size.width / 2, y: Constants.curtainHandleYCenter)
+    }
+    
     ///Changes a curtain position you want.
     ///- Parameter position: The position of the curtain to be applied.
     ///- Parameter animated: Pass true to animate the position change.
@@ -153,7 +157,7 @@ open class CurtainController: UIViewController {
     }
     
     private func addCurtainHandleView() {
-        curtainHandleView = .init(frame: .init(origin: .zero, size: Constants.curtainHandleViewSize))
+        curtainHandleView.frame = .init(origin: .zero, size: Constants.curtainHandleViewSize)
         curtainHandleView.backgroundColor = curtainHandleIndicatorColor
         curtainHandleView.layer.cornerRadius = curtainHandleView.frame.height / 2
         curtainHandleView.alpha = 0
