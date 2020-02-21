@@ -46,3 +46,31 @@ public protocol Curtain {
     var actualHeight: CGFloat { get }
     
 }
+
+public extension Curtain {
+    
+    ///The function that returns CGFloat value describes the relationship of actual curtains height and the range between bottom and top state. This relation is CGFloat value in a range between 0 and 1 where 0.
+    ///- Parameter bottomState: Describes the start state in the calculation range.
+    ///- Parameter topState: Describes the end state in the calculation range.
+    func relativeCoefficient(bottom bottomState: CurtainHeightState, top topState: CurtainHeightState) -> CGFloat {
+        var bottomCoefficient: CGFloat
+        var topCoefficient: CGFloat
+        
+        switch bottomState {
+        case .min: bottomCoefficient = minHeightCoefficient
+        case .mid: bottomCoefficient = midHeightCoefficient ?? 0
+        case .max: bottomCoefficient = maxHeightCoefficient
+        default: bottomCoefficient = 0
+        }
+        
+        switch topState {
+        case .min: topCoefficient = minHeightCoefficient
+        case .mid: topCoefficient = midHeightCoefficient ?? 0
+        case .max: topCoefficient = maxHeightCoefficient
+        default: topCoefficient = 0
+        }
+        
+        return round((heightCoefficient - bottomCoefficient) / (topCoefficient - bottomCoefficient) * 1000) / 1000
+    }
+
+}

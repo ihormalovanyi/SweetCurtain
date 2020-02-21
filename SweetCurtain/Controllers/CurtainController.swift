@@ -96,9 +96,11 @@ open class CurtainController: UIViewController {
         }
     }
     
+    //MARK: Open computed properties
+    open var contentViewControlelr: UIViewController { children[0] }
+    open var curtainViewController: UIViewController { children[1] }
+    
     //MARK: Private computed properties
-    private var contentViewControlelr: UIViewController { children[0] }
-    private var curtainViewController: UIViewController { children[1] }
     private var topMostScrollView: UIScrollView?
     
     //MARK: Lifecycle
