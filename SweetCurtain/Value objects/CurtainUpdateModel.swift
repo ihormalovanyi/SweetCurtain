@@ -48,7 +48,7 @@ internal class CurtainUpdateModel: Curtain {
     }
 
     
-    private var curtainController: CurtainController
+    private weak var curtainController: CurtainController!
     
     init(in curtainController: CurtainController) {
         self.curtainController = curtainController
