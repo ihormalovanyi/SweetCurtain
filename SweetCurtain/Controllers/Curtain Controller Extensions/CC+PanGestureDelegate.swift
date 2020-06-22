@@ -22,7 +22,6 @@ import UIKit
 
 extension CurtainController: UIGestureRecognizerDelegate {
     
-    ///- TODO: Need to test this solution. It need for allow horizontal scroll
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         guard let _ = otherGestureRecognizer as? UIPanGestureRecognizer,
             let current = gestureRecognizer as? UIPanGestureRecognizer else {
@@ -31,7 +30,6 @@ extension CurtainController: UIGestureRecognizerDelegate {
         
         let velocity = current.velocity(in: view)
         
-        return abs(velocity.x) >= abs(velocity.y)
+        return abs(velocity.x) < abs(velocity.y)
     }
-    
 }
