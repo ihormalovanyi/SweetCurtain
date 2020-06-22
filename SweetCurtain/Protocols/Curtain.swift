@@ -44,6 +44,8 @@ public protocol Curtain {
     var heightCoefficient: CGFloat { get }
     ///The current value that describes the curtain actual height.
     var actualHeight: CGFloat { get }
+    ///The boolean value that allow to control the simultaneous gestures
+    var shouldRecognizeSimultaneously: Bool { get set }
     
 }
 
