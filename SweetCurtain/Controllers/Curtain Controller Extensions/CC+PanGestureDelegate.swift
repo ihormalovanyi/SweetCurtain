@@ -23,11 +23,8 @@ import UIKit
 extension CurtainController: UIGestureRecognizerDelegate {
     
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        if curtain.shouldRecognizeSimultaneously {
-            return true
-        }
         guard let _ = otherGestureRecognizer as? UIPanGestureRecognizer,
-            let current = gestureRecognizer as? UIPanGestureRecognizer else {
+            let current = gestureRecognizer as? UIPanGestureRecognizer, curtain.shouldRecognizeSimultaneously else {
                 return false
         }
         
