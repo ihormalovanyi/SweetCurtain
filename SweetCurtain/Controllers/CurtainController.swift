@@ -60,10 +60,10 @@ open class CurtainController: UIViewController {
         }
     }
     internal var curtainHeightCoefficient: CGFloat {
-        var sceneHeight: CGFloat = contentViewControlelr.view.bounds.height
+        var sceneHeight: CGFloat = contentViewController.view.bounds.height
         if ignoreSafeArea {
             if #available(iOS 11.0, *) {
-                sceneHeight -= contentViewControlelr.view.safeAreaInsets.top
+                sceneHeight -= contentViewController.view.safeAreaInsets.top
             }
         }
         
@@ -97,7 +97,7 @@ open class CurtainController: UIViewController {
     }
     
     //MARK: Open computed properties
-    open var contentViewControlelr: UIViewController { children[0] }
+    open var contentViewController: UIViewController { children[0] }
     open var curtainViewController: UIViewController { children[1] }
     
     //MARK: Private computed properties
@@ -180,7 +180,7 @@ open class CurtainController: UIViewController {
 private extension CurtainController {
     
     private func height(for heightType: CurtainHeightState) -> CGFloat {
-        curtainHeightProvider.height(heightType, relative: contentViewControlelr.view, ignoreSafeArea: ignoreSafeArea) ?? 0
+        curtainHeightProvider.height(heightType, relative: contentViewController.view, ignoreSafeArea: ignoreSafeArea) ?? 0
     }
     
     private func permittedHeight(for translation: CGFloat, bounce: Bool = true) -> CGFloat {
