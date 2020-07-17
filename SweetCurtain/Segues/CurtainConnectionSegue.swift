@@ -20,7 +20,7 @@
 
 import UIKit
 
-internal class CurtainConnectionSegue: UIStoryboardSegue {
+open class CurtainConnectionSegue: UIStoryboardSegue {
 
     struct Constants {
         
