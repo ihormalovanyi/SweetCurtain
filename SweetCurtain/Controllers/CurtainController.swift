@@ -168,8 +168,14 @@ open class CurtainController: UIViewController {
         curtainShowsHandleIndicator = curtain.showsHandleIndicator
     }
     
-    internal func allowScrollViewInCurtain(from viewController: UIViewController) {
-        topMostScrollView = viewController.view.findScrollSubview()
+    internal func allowTopMostScrollViewInCurtain(from viewController: UIViewController) {
+        if let scrollView = viewController.view.findScrollSubview() {
+            allowScrollViewInCurtain(scrollView)
+        }
+    }
+    
+    internal func allowScrollViewInCurtain(_ scrollView: UIScrollView) {
+        topMostScrollView = scrollView
         addObservers()
         addScrollPanGestureRecognizer()
     }

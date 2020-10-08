@@ -26,8 +26,13 @@ public extension UIViewController {
     var curtainController: CurtainController? { findCurtainParent(in: self) }
     
     ///Allows topmost scroll view in the hierarchy to use its scroll simultaneously with the curtain
-    func allowScrollViewInCurtain() {
-        curtainController?.allowScrollViewInCurtain(from: self)
+    func allowTopMostScrollViewInCurtain() {
+        curtainController?.allowTopMostScrollViewInCurtain(from: self)
+    }
+    
+    ///Allows some scroll view to use its scroll simultaneously with the curtain
+    func allowSomeScrollViewInCurtain(_ scrollView: UIScrollView) {
+        curtainController?.allowScrollViewInCurtain(scrollView)
     }
     
 }

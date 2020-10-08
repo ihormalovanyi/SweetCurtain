@@ -24,6 +24,7 @@
 		0AF9BF0623BE0C6E00655B1D /* SweetCurtainHeighsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEFC23BE0C6E00655B1D /* SweetCurtainHeighsCell.swift */; };
 		0AF9BF2D23BFD45F00655B1D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BF2C23BFD45F00655B1D /* StartViewController.swift */; };
 		0AF9BF3A23C1D3C300655B1D /* CALayer+SketchShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BF3923C1D3C300655B1D /* CALayer+SketchShadow.swift */; };
+		B2D6DF1402CF0B8F11FBD214 /* Pods_SweetCurtainPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF32BC6D6AB0CC5436A95CB /* Pods_SweetCurtainPlayground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,9 @@
 		0AF9BEFC23BE0C6E00655B1D /* SweetCurtainHeighsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetCurtainHeighsCell.swift; sourceTree = "<group>"; };
 		0AF9BF2C23BFD45F00655B1D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		0AF9BF3923C1D3C300655B1D /* CALayer+SketchShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+SketchShadow.swift"; sourceTree = "<group>"; };
+		3AF32BC6D6AB0CC5436A95CB /* Pods_SweetCurtainPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetCurtainPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96172F1548167993B78FF3B /* Pods-SweetCurtainPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetCurtainPlayground.release.xcconfig"; path = "Target Support Files/Pods-SweetCurtainPlayground/Pods-SweetCurtainPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		EFFDCE2A0995CAAF313C3C83 /* Pods-SweetCurtainPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetCurtainPlayground.debug.xcconfig"; path = "Target Support Files/Pods-SweetCurtainPlayground/Pods-SweetCurtainPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D6DF1402CF0B8F11FBD214 /* Pods_SweetCurtainPlayground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 				0AF9BE7823BE021E00655B1D /* SweetCurtainPlayground */,
 				0AF9BE7723BE021E00655B1D /* Products */,
 				7B585414ED8E6FB8FF7F1D39 /* Pods */,
+				9DB52875FCB0F097FED11BC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,8 +134,18 @@
 		7B585414ED8E6FB8FF7F1D39 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				EFFDCE2A0995CAAF313C3C83 /* Pods-SweetCurtainPlayground.debug.xcconfig */,
+				C96172F1548167993B78FF3B /* Pods-SweetCurtainPlayground.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9DB52875FCB0F097FED11BC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AF32BC6D6AB0CC5436A95CB /* Pods_SweetCurtainPlayground.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AF9BE8A23BE021F00655B1D /* Build configuration list for PBXNativeTarget "SweetCurtainPlayground" */;
 			buildPhases = (
+				6DD56674ECC1B1AAC2E0C943 /* [CP] Check Pods Manifest.lock */,
 				0AF9BE7223BE021E00655B1D /* Sources */,
 				0AF9BE7323BE021E00655B1D /* Frameworks */,
 				0AF9BE7423BE021E00655B1D /* Resources */,
+				B6AB6D8EC8172431869EE8BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +219,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DD56674ECC1B1AAC2E0C943 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweetCurtainPlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6AB6D8EC8172431869EE8BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweetCurtainPlayground/Pods-SweetCurtainPlayground-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweetCurtainPlayground/Pods-SweetCurtainPlayground-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SweetCurtainPlayground/Pods-SweetCurtainPlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AF9BE7223BE021E00655B1D /* Sources */ = {
@@ -358,6 +418,7 @@
 		};
 		0AF9BE8B23BE021F00655B1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFFDCE2A0995CAAF313C3C83 /* Pods-SweetCurtainPlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +438,7 @@
 		};
 		0AF9BE8C23BE021F00655B1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C96172F1548167993B78FF3B /* Pods-SweetCurtainPlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
