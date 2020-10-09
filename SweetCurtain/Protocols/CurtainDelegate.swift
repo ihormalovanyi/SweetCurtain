@@ -32,6 +32,10 @@ public protocol CurtainDelegate: class {
     ///- Parameter curtain: The object that represents curtain properties.
     func curtainWillBeginDragging(_ curtain: Curtain)
     
+    ///Tells the delegate when dragging will be ended in the curtain.
+    ///- Parameter curtain: The object that represents curtain properties.
+    func curtainWillEndDragging(_ curtain: Curtain)
+    
     ///Tells the delegate when dragging ended in the curtain.
     ///- Parameter curtain: The object that represents curtain properties.
     func curtainDidEndDragging(_ curtain: Curtain)
@@ -46,6 +50,7 @@ public extension CurtainDelegate {
     
     func curtain(_ curtain: Curtain, didChange heightState: CurtainHeightState) {}
     func curtainWillBeginDragging(_ curtain: Curtain) {}
+    func curtainWillEndDragging(_ curtain: Curtain) {}
     func curtainDidEndDragging(_ curtain: Curtain) {}
     func curtainDidDrag(_ curtain: Curtain) {}
     

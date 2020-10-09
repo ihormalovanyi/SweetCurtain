@@ -232,10 +232,11 @@ private extension CurtainController {
     @objc func pan(_ gesture: UIPanGestureRecognizer) {
         switch gesture.state {
         case .ended, .cancelled:
-            curtainDelegate?.curtainDidEndDragging(curtain)
+            curtainDelegate?.curtainWillEndDragging(curtain)
             tryPush(.for(velocity: gesture.velocity(in: view).y, treshold: curtain.swipeResistance.velocity)) { [weak self] in
                 self?.bringToNearestPoint()
             }
+            curtainDelegate?.curtainDidEndDragging(curtain)
         case .changed:
             let yTranslation = gesture.translation(in: view).y
             curtainActualHeight = permittedHeight(for: yTranslation, bounce: true)
@@ -279,6 +280,7 @@ private extension CurtainController {
             
             scrollStartLocation = gesture.translation(in: scrollView)
         case .ended:
+            curtainDelegate?.curtainWillEndDragging(curtain)
             tryPush(.for(velocity: gesture.velocity(in: view).y, treshold: curtain.swipeResistance.velocity)) { [weak self] in
                 self?.bringToNearestPoint()
             }
