@@ -47,7 +47,8 @@ internal class CurtainUpdateModel: Curtain {
         set { curtainController?.curtainHandleIndicatorColor = newValue }
     }
 
-    
+    //The leak was fixed thanks to Roman Scherbakov
+    //0.2.2 -> 0.2.5: make 'curtainController' weak
     private weak var curtainController: CurtainController?
     
     init(in curtainController: CurtainController) {
