@@ -23,32 +23,32 @@ import UIKit
 internal class CurtainUpdateModel: Curtain {
         
     var minHeightCoefficient: CGFloat = 0.2 {
-        willSet { curtainController.curtainHeightProvider.minCoefficient = newValue }
+        willSet { curtainController?.curtainHeightProvider.minCoefficient = newValue }
     }
     var midHeightCoefficient: CGFloat? = 0.5 {
-        willSet { curtainController.curtainHeightProvider.midCoefficient = newValue }
+        willSet { curtainController?.curtainHeightProvider.midCoefficient = newValue }
     }
     var maxHeightCoefficient: CGFloat = 0.8 {
-        willSet { curtainController.curtainHeightProvider.maxCoefficient = newValue }
+        willSet { curtainController?.curtainHeightProvider.maxCoefficient = newValue }
     }
     var swipeResistance: CurtainSwipeResistance = .normal
     var movingDuration: TimeInterval = 0.4
     var topBounce: Bool = true
     var bottomBounce: Bool = true
     var showsHandleIndicator: Bool = true {
-        willSet { curtainController.curtainShowsHandleIndicator = newValue }
+        willSet { curtainController?.curtainShowsHandleIndicator = newValue }
     }
     
-    var heightCoefficient: CGFloat { curtainController.curtainHeightCoefficient }
-    var actualHeight: CGFloat { curtainController.curtainActualHeight }
+    var heightCoefficient: CGFloat { curtainController?.curtainHeightCoefficient ?? 0 }
+    var actualHeight: CGFloat { curtainController?.curtainActualHeight ?? 0 }
     
     var handleIndicatorColor: UIColor {
-        get { return curtainController.curtainHandleIndicatorColor }
-        set { curtainController.curtainHandleIndicatorColor = newValue }
+        get { return curtainController?.curtainHandleIndicatorColor ?? .clear }
+        set { curtainController?.curtainHandleIndicatorColor = newValue }
     }
 
     
-    private var curtainController: CurtainController
+    private weak var curtainController: CurtainController?
     
     init(in curtainController: CurtainController) {
         self.curtainController = curtainController
