@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SweetCurtain"
-  spec.version      = "0.2.5"
+  spec.version      = "0.9.0"
   spec.summary      = "A framework that provides the component that implements the content-curtain interface."
   spec.description = "A framework that provides CurtainController. CurtainController is a container view controller that implements a content-curtain interface. You can find a similar implementation in applications like Apple Maps, Find My, Stocks, etc."
 
@@ -17,6 +17,6 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "SweetCurtain/**/*.{h,m,swift}"
 
-  spec.swift_version = "5.3"
+  spec.swift_version = "5.5"
 
 end

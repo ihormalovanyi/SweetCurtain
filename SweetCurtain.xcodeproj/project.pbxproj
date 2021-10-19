@@ -10,20 +10,9 @@
 		0AF9BE5D23BE01DB00655B1D /* SweetCurtain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9BE5323BE01DB00655B1D /* SweetCurtain.framework */; };
 		0AF9BE6223BE01DB00655B1D /* SweetCurtainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BE6123BE01DB00655B1D /* SweetCurtainTests.swift */; };
 		0AF9BE6423BE01DB00655B1D /* SweetCurtain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF9BE5623BE01DB00655B1D /* SweetCurtain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AF9BEB923BE09D200655B1D /* CurtainPushDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEA423BE09D200655B1D /* CurtainPushDirection.swift */; };
-		0AF9BEBA23BE09D200655B1D /* CurtainSwipeResistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEA523BE09D200655B1D /* CurtainSwipeResistance.swift */; };
-		0AF9BEBB23BE09D200655B1D /* CurtainHeightState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEA623BE09D200655B1D /* CurtainHeightState.swift */; };
-		0AF9BEBC23BE09D200655B1D /* CGFloatArray+findClosest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEA823BE09D200655B1D /* CGFloatArray+findClosest.swift */; };
-		0AF9BEBD23BE09D200655B1D /* UIView+findScrollSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEA923BE09D200655B1D /* UIView+findScrollSubview.swift */; };
-		0AF9BEBE23BE09D200655B1D /* UIViewController+CurtainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEAA23BE09D200655B1D /* UIViewController+CurtainController.swift */; };
 		0AF9BEBF23BE09D200655B1D /* CurtainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEAC23BE09D200655B1D /* CurtainController.swift */; };
-		0AF9BEC023BE09D200655B1D /* CC+AddControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEAE23BE09D200655B1D /* CC+AddControllers.swift */; };
-		0AF9BEC223BE09D200655B1D /* CurtainHeightProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB123BE09D200655B1D /* CurtainHeightProvider.swift */; };
-		0AF9BEC423BE09D200655B1D /* Curtain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB423BE09D200655B1D /* Curtain.swift */; };
-		0AF9BEC523BE09D200655B1D /* CurtainUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BEB623BE09D200655B1D /* CurtainUpdateModel.swift */; };
-		0AF9BF3323C1C99D00655B1D /* CurtainDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BF3223C1C99D00655B1D /* CurtainDelegate.swift */; };
-		0AF9BF3523C1C9BF00655B1D /* CC+PanGestureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BF3423C1C9BF00655B1D /* CC+PanGestureDelegate.swift */; };
-		0AF9BF3723C1C9F900655B1D /* CurtainConnectionSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9BF3623C1C9F900655B1D /* CurtainConnectionSegue.swift */; };
+		875146D7271ECE3200F21EE9 /* CurtainDetents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875146D6271ECE3200F21EE9 /* CurtainDetents.swift */; };
+		875146D9271ECE4900F21EE9 /* SweetCurtain+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875146D8271ECE4900F21EE9 /* SweetCurtain+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,20 +32,9 @@
 		0AF9BE5C23BE01DB00655B1D /* SweetCurtainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetCurtainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF9BE6123BE01DB00655B1D /* SweetCurtainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetCurtainTests.swift; sourceTree = "<group>"; };
 		0AF9BE6323BE01DB00655B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AF9BEA423BE09D200655B1D /* CurtainPushDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainPushDirection.swift; sourceTree = "<group>"; };
-		0AF9BEA523BE09D200655B1D /* CurtainSwipeResistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainSwipeResistance.swift; sourceTree = "<group>"; };
-		0AF9BEA623BE09D200655B1D /* CurtainHeightState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainHeightState.swift; sourceTree = "<group>"; };
-		0AF9BEA823BE09D200655B1D /* CGFloatArray+findClosest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloatArray+findClosest.swift"; sourceTree = "<group>"; };
-		0AF9BEA923BE09D200655B1D /* UIView+findScrollSubview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+findScrollSubview.swift"; sourceTree = "<group>"; };
-		0AF9BEAA23BE09D200655B1D /* UIViewController+CurtainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+CurtainController.swift"; sourceTree = "<group>"; };
 		0AF9BEAC23BE09D200655B1D /* CurtainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainController.swift; sourceTree = "<group>"; };
-		0AF9BEAE23BE09D200655B1D /* CC+AddControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CC+AddControllers.swift"; sourceTree = "<group>"; };
-		0AF9BEB123BE09D200655B1D /* CurtainHeightProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainHeightProvider.swift; sourceTree = "<group>"; };
-		0AF9BEB423BE09D200655B1D /* Curtain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curtain.swift; sourceTree = "<group>"; };
-		0AF9BEB623BE09D200655B1D /* CurtainUpdateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainUpdateModel.swift; sourceTree = "<group>"; };
-		0AF9BF3223C1C99D00655B1D /* CurtainDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainDelegate.swift; sourceTree = "<group>"; };
-		0AF9BF3423C1C9BF00655B1D /* CC+PanGestureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CC+PanGestureDelegate.swift"; sourceTree = "<group>"; };
-		0AF9BF3623C1C9F900655B1D /* CurtainConnectionSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainConnectionSegue.swift; sourceTree = "<group>"; };
+		875146D6271ECE3200F21EE9 /* CurtainDetents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtainDetents.swift; sourceTree = "<group>"; };
+		875146D8271ECE4900F21EE9 /* SweetCurtain+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SweetCurtain+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +77,9 @@
 		0AF9BE5523BE01DB00655B1D /* SweetCurtain */ = {
 			isa = PBXGroup;
 			children = (
-				0AF9BEAB23BE09D200655B1D /* Controllers */,
-				0AF9BEA323BE09D200655B1D /* Enums */,
-				0AF9BEA723BE09D200655B1D /* Extensions */,
-				0AF9BEB223BE09D200655B1D /* Protocols */,
-				0AF9BEB723BE09D200655B1D /* Segues */,
-				0AF9BEAF23BE09D200655B1D /* Services */,
-				0AF9BEB523BE09D200655B1D /* Value objects */,
+				0AF9BEAC23BE09D200655B1D /* CurtainController.swift */,
+				875146D8271ECE4900F21EE9 /* SweetCurtain+Extensions.swift */,
+				875146D6271ECE3200F21EE9 /* CurtainDetents.swift */,
 				0AF9BE5623BE01DB00655B1D /* SweetCurtain.h */,
 				0AF9BE5723BE01DB00655B1D /* Info.plist */,
 			);
@@ -119,77 +93,6 @@
 				0AF9BE6323BE01DB00655B1D /* Info.plist */,
 			);
 			path = SweetCurtainTests;
-			sourceTree = "<group>";
-		};
-		0AF9BEA323BE09D200655B1D /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				0AF9BEA423BE09D200655B1D /* CurtainPushDirection.swift */,
-				0AF9BEA523BE09D200655B1D /* CurtainSwipeResistance.swift */,
-				0AF9BEA623BE09D200655B1D /* CurtainHeightState.swift */,
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
-		0AF9BEA723BE09D200655B1D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				0AF9BEA823BE09D200655B1D /* CGFloatArray+findClosest.swift */,
-				0AF9BEA923BE09D200655B1D /* UIView+findScrollSubview.swift */,
-				0AF9BEAA23BE09D200655B1D /* UIViewController+CurtainController.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		0AF9BEAB23BE09D200655B1D /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				0AF9BEAC23BE09D200655B1D /* CurtainController.swift */,
-				0AF9BEAD23BE09D200655B1D /* Curtain Controller Extensions */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		0AF9BEAD23BE09D200655B1D /* Curtain Controller Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				0AF9BF3423C1C9BF00655B1D /* CC+PanGestureDelegate.swift */,
-				0AF9BEAE23BE09D200655B1D /* CC+AddControllers.swift */,
-			);
-			path = "Curtain Controller Extensions";
-			sourceTree = "<group>";
-		};
-		0AF9BEAF23BE09D200655B1D /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				0AF9BEB123BE09D200655B1D /* CurtainHeightProvider.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		0AF9BEB223BE09D200655B1D /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				0AF9BF3223C1C99D00655B1D /* CurtainDelegate.swift */,
-				0AF9BEB423BE09D200655B1D /* Curtain.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		0AF9BEB523BE09D200655B1D /* Value objects */ = {
-			isa = PBXGroup;
-			children = (
-				0AF9BEB623BE09D200655B1D /* CurtainUpdateModel.swift */,
-			);
-			path = "Value objects";
-			sourceTree = "<group>";
-		};
-		0AF9BEB723BE09D200655B1D /* Segues */ = {
-			isa = PBXGroup;
-			children = (
-				0AF9BF3623C1C9F900655B1D /* CurtainConnectionSegue.swift */,
-			);
-			path = Segues;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +152,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "Ihor Malovanyi";
 				TargetAttributes = {
 					0AF9BE5223BE01DB00655B1D = {
@@ -301,20 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF9BEC223BE09D200655B1D /* CurtainHeightProvider.swift in Sources */,
-				0AF9BF3723C1C9F900655B1D /* CurtainConnectionSegue.swift in Sources */,
-				0AF9BEC523BE09D200655B1D /* CurtainUpdateModel.swift in Sources */,
-				0AF9BF3523C1C9BF00655B1D /* CC+PanGestureDelegate.swift in Sources */,
-				0AF9BEC423BE09D200655B1D /* Curtain.swift in Sources */,
-				0AF9BF3323C1C99D00655B1D /* CurtainDelegate.swift in Sources */,
-				0AF9BEBA23BE09D200655B1D /* CurtainSwipeResistance.swift in Sources */,
-				0AF9BEBD23BE09D200655B1D /* UIView+findScrollSubview.swift in Sources */,
-				0AF9BEBC23BE09D200655B1D /* CGFloatArray+findClosest.swift in Sources */,
-				0AF9BEC023BE09D200655B1D /* CC+AddControllers.swift in Sources */,
+				875146D9271ECE4900F21EE9 /* SweetCurtain+Extensions.swift in Sources */,
+				875146D7271ECE3200F21EE9 /* CurtainDetents.swift in Sources */,
 				0AF9BEBF23BE09D200655B1D /* CurtainController.swift in Sources */,
-				0AF9BEBB23BE09D200655B1D /* CurtainHeightState.swift in Sources */,
-				0AF9BEB923BE09D200655B1D /* CurtainPushDirection.swift in Sources */,
-				0AF9BEBE23BE09D200655B1D /* UIViewController+CurtainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +255,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -426,6 +319,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -474,7 +368,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.2;
+				MARKETING_VERSION = 0.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pro.ihor.ios.framework.SweetCurtain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -501,7 +395,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.2;
+				MARKETING_VERSION = 0.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pro.ihor.ios.framework.SweetCurtain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

@@ -1,5 +1,5 @@
-///  Copyright © 2019 Ihor Malovanyi. All rights reserved.
-///
+///  Copyright © 2021 Ihor Malovanyi. All rights reserved.
+/// https://www.ihor.pro
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
 /// in the Software without restriction, including without limitation the rights
@@ -20,27 +20,34 @@
 
 import UIKit
 
-///Swipe resistances available for the curtain.
-public enum CurtainSwipeResistance {
+extension UIViewController {
+ 
+    @discardableResult
+    func addCurtain<T: UIViewController>(_ curtainType: T.Type) -> CurtainController<T> {
+        addCurtain(curtainType.init())
+    }
     
-    ///No resistance. Velocity value is 0.
-    case any
-    ///Low resistance. Velocity value is 300.
-    case low
-    ///Normal resistance. Velocity value is 600.
-    case normal
-    ///High resistance. Velocity value is 900.
-    case high
-    ///Custom resistance. Velocity value is what you set.
-    case custom(velocity: CGFloat)
+    @discardableResult
+    func addCurtain<T: UIViewController>(_ curtain: T) -> CurtainController<T> {
+        CurtainController(curtain, holder: self)
+    }
     
-    internal var velocity: CGFloat {
-        switch self {
-        case .any: return 0
-        case .low: return 300
-        case .normal: return 600
-        case .high: return 900
-        case .custom(let velocity): return velocity
+    internal func topMostScrollView() -> UIScrollView? {
+        view.topMostScrollView()
+    }
+    
+}
+
+internal extension UIView {
+    
+    func topMostScrollView() -> UIScrollView? {
+        if let scrollView = self as? UIScrollView {
+            return scrollView
+        } else {
+            for view in subviews {
+                return view.topMostScrollView()
+            }
+            return nil
         }
     }
     
