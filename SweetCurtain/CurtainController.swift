@@ -57,6 +57,20 @@ open class CurtainController<T: UIViewController>: NSObject, UIGestureRecognizer
     private var startScrollViewYOffset: CGFloat = 0
     private var touchWithScroll = false
     
+    open var detents: Detents {
+        get { _detents }
+        set {
+            _detents = newValue
+            height = _detents.small
+        }
+    }
+    
+    open var viewController: T { curtainViewController }
+    
+    open var preferredCornerRadius: CGFloat {
+        get { view.layer.cornerRadius }
+        set { view.layer.cornerRadius = newValue }
+    }
     open var bounces = false
     
     //Views & Controllers
@@ -191,26 +205,6 @@ open class CurtainController<T: UIViewController>: NSObject, UIGestureRecognizer
         changeListener?(self, .willBeginDragging)
         //Beta
         return touchWithScroll ? abs(scrollView?.panGestureRecognizer.translation(in: scrollView).x ?? 0) < abs(scrollView?.panGestureRecognizer.translation(in: scrollView).y ?? 0) : true
-    }
-    
-}
-
-//API
-public extension CurtainController {
-    
-    var detents: Detents {
-        get { _detents }
-        set {
-            _detents = newValue
-            height = _detents.small
-        }
-    }
-    
-    var viewController: T { curtainViewController }
-    
-    var preferredCornerRadius: CGFloat {
-        get { view.layer.cornerRadius }
-        set { view.layer.cornerRadius = newValue }
     }
     
 }

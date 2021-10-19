@@ -20,15 +20,15 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
  
     @discardableResult
-    func addCurtain<T: UIViewController>(_ curtainType: T.Type) -> CurtainController<T> {
-        addCurtain(curtainType.init())
+    func MakeCurtain<T: UIViewController>(_ curtainType: T.Type) -> CurtainController<T> {
+        MakeCurtain(curtainType.init())
     }
     
     @discardableResult
-    func addCurtain<T: UIViewController>(_ curtain: T) -> CurtainController<T> {
+    func MakeCurtain<T: UIViewController>(_ curtain: T) -> CurtainController<T> {
         CurtainController(curtain, holder: self)
     }
     
@@ -41,14 +41,7 @@ extension UIViewController {
 internal extension UIView {
     
     func topMostScrollView() -> UIScrollView? {
-        if let scrollView = self as? UIScrollView {
-            return scrollView
-        } else {
-            for view in subviews {
-                return view.topMostScrollView()
-            }
-            return nil
-        }
+        subviews.compactMap { $0 as? UIScrollView }.first
     }
     
 }

@@ -43,19 +43,19 @@ public struct Detents {
     
     private var isStaticSize: Bool { small == medium && medium == large }
     
-    init(static height: CGFloat) {
+    public init(static height: CGFloat) {
         small = height
         medium = height
         large = height
     }
 
-    init(small: CGFloat, large: CGFloat) {
+    public init(small: CGFloat, large: CGFloat) {
         self.small = small
         self.medium = large
         self.large = large
     }
     
-    init(small: CGFloat, medium: CGFloat, large: CGFloat) {
+    public init(small: CGFloat, medium: CGFloat, large: CGFloat) {
         self.small = small
         self.medium = medium
         self.large = large
