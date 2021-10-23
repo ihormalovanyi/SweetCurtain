@@ -22,7 +22,7 @@ import UIKit
 
 public struct Detents {
             
-    public enum CurrentDetent {
+    public enum Detent {
         
         case small, medium, large
         
@@ -35,7 +35,7 @@ public struct Detents {
     }
     
     internal var currentHeight: CGFloat { current == .small ? small : current == .medium ? medium : large }
-    private(set) var current: CurrentDetent = .small
+    private(set) var current: Detent = .small
     
     private(set) var small: CGFloat
     private(set) var medium: CGFloat
@@ -43,7 +43,7 @@ public struct Detents {
     
     private var isStaticSize: Bool { small == medium && medium == large }
     
-    public init(static height: CGFloat) {
+    public init(_ height: CGFloat) {
         small = height
         medium = height
         large = height
@@ -71,6 +71,10 @@ public struct Detents {
         let bounceValue: CGFloat = 0//bounces ? height / 2 : 0
         
         return newHeight < small + bounceValue ? small : newHeight > large ? large + bounceValue : newHeight
+    }
+    
+    mutating internal func commit(_ detent: Detent) {
+        current = detent
     }
     
     mutating internal func commit(_ height: CGFloat, dirrection: CommitDirrection? = nil) {

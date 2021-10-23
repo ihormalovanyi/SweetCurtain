@@ -79,7 +79,7 @@ open class CurtainController<T: UIViewController>: NSObject, UIGestureRecognizer
     private var scrollView: UIScrollView? { curtainViewController?.topMostScrollView() }
     
     //Additions
-    private var _detents = Detents(static: UIScreen.main.bounds.height / 2)
+    private var _detents = Detents(UIScreen.main.bounds.height / 2)
     
     internal init(_ curtainVC: T, holder: UIViewController) {
         super.init()
@@ -179,6 +179,17 @@ open class CurtainController<T: UIViewController>: NSObject, UIGestureRecognizer
                 self.touchWithScroll = false
             }
         }
+    }
+    
+    open func move(to detent: Detents.Detent, animated: Bool) {
+        detents.commit(detent)
+        changeListener?(self, .didChangeDetent)
+        if animated {
+            animate()
+            return
+        }
+        
+        height = detents.currentHeight
     }
     
     open func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
