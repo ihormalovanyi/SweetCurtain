@@ -194,13 +194,15 @@ open class CurtainController<T: UIViewController>: NSObject, UIGestureRecognizer
     
     open func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         
+        guard otherGestureRecognizer is UIPanGestureRecognizer else { return false }
+        
         touchWithScroll = false
         
         guard let scrollStartOffsetY = scrollView?.contentOffset.y else { return false }
         
         startScrollViewYOffset = scrollStartOffsetY < 0 ? 0 : scrollStartOffsetY
         
-        if otherGestureRecognizer.view == scrollView && otherGestureRecognizer is UIPanGestureRecognizer {
+        if gestureRecognizer.location(in: scrollView).y > 0 {
             touchWithScroll = true
             if startScrollViewYOffset > 0 {
                 return false

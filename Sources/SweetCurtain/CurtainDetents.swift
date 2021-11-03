@@ -35,7 +35,7 @@ public struct Detents {
     }
     
     internal var currentHeight: CGFloat { current == .small ? small : current == .medium ? medium : large }
-    private(set) var current: Detent = .small
+    public private(set) var current: Detent = .small
     
     private(set) var small: CGFloat
     private(set) var medium: CGFloat
