@@ -44,7 +44,7 @@ open class CurtainController<T: UIViewController>: NSObject, UIGestureRecognizer
         constraint.priority = .init(rawValue: 900)
         return constraint
     }()
-    private var height: CGFloat {
+    open private(set) var height: CGFloat {
         get {
             heightConstraint.constant
         }
