@@ -36,7 +36,7 @@ open class CurtainController<T: UIViewController>: NSObject, UIGestureRecognizer
     private let maxVelocity: CGFloat = 2500
     
     //Delegate
-    var changeListener: ((CurtainController<T>, Change) -> ())?
+    open var changeListener: ((CurtainController<T>, Change) -> ())?
     
     //Constraints & Heights
     private lazy var heightConstraint: NSLayoutConstraint = {
