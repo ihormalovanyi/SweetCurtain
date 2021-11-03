@@ -22,7 +22,7 @@ import UIKit
 
 open class CurtainController<T: UIViewController>: NSObject, UIGestureRecognizerDelegate {
     
-    enum Change: Int {
+    open enum Change: Int {
         
         case willBeginDragging
         case willEndDragging
