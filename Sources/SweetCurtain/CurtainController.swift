@@ -17,7 +17,6 @@
 /// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 /// SOFTWARE.
-
 import UIKit
 
 open class CurtainController<T: UIViewController>: NSObject, UIGestureRecognizerDelegate {
@@ -65,7 +64,7 @@ open class CurtainController<T: UIViewController>: NSObject, UIGestureRecognizer
         }
     }
     
-    open var viewController: T { curtainViewController! }
+    open var viewController: T { curtainViewController }
     
     open var preferredCornerRadius: CGFloat {
         get { view.layer.cornerRadius }
@@ -74,7 +73,7 @@ open class CurtainController<T: UIViewController>: NSObject, UIGestureRecognizer
     open var bounces = false
     
     //Views & Controllers
-    private weak var curtainViewController: T?
+    private unowned var curtainViewController: T!
     private var view = UIView()
     private var scrollView: UIScrollView? { curtainViewController?.topMostScrollView() }
     
@@ -100,8 +99,8 @@ open class CurtainController<T: UIViewController>: NSObject, UIGestureRecognizer
     }
     
     private func setupConstraints() {
-        guard let content = curtainViewController?.parent?.view,
-              let curtainContentView = curtainViewController?.view else { return }
+        guard let content = curtainViewController.parent?.view,
+              let curtainContentView = curtainViewController.view else { return }
         
         view.translatesAutoresizingMaskIntoConstraints = false
         curtainContentView.translatesAutoresizingMaskIntoConstraints = false
